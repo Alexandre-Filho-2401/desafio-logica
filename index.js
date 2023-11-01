@@ -13,33 +13,31 @@ for(let i=1;i<=x;i++){
     xp += 500;
 }
 
-switch(xp){
-    case xp<1000:
+switch(true){
+    case xp<=1000:
         Classe = "Ferro";
         break
-    case xp>1001 && xp<2000:
+    case xp<=2000:
         Classe = "Bronze";
         break
-    case xp>2001 && xp<5000:
+    case xp<=5000:
         Classe = "Prata";
         break
-    case xp>5001 && xp<7000:
+    case xp<=7000:
         Classe = "Ouro";
         break
-    case xp>7001 && xp<8000:
+    case xp<=8000:
         Classe = "Platina";
         break
-    case xp>8001 && xp<9000:
+    case xp<=9000:
         Classe = "Ascendente";
         break
-    case xp>9001 && xp<10000:
+    case xp<=10000:
         Classe = "Imortal";
         break
-    case xp>10001:
+    default:
         Classe = "Radiante"
         break
-    default:
-        console.log("Tá jogando o jogo, mano?");
 }
 
-console.log("O heroi "+Heroi+" está no nivel "+Classe);
+console.log("O heroi de nome "+Heroi+" está no nivel de "+Classe);
